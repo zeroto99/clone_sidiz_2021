@@ -15,6 +15,12 @@ body {
 	overflow: hidden;
 }
 
+.clearfix {
+    content: '';
+    display: table;
+    overflow: hidden;
+}
+
 /* 헤더 */
 
 .header-container {
@@ -66,10 +72,11 @@ header .header-inf {
     border: none;
     background: none;
     font-size: 13px;
+    /* 음수값으로 주면 돼요 */
+    letter-spacing: -1px;
 }
 
-.header-link .link-menu,
-.header-inf .inf-menu {
+.header-link .link-menuu {
     overflow: hidden;
 }
 
@@ -79,13 +86,50 @@ header .header-inf {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.link-menu li, 
-.inf-menu li {
+.link-menu li {
     float: left;
+    cursor: pointer;
 }
 
-.link-menu li:not(:last-child) {
-    margin-right: 30px;
+.link-menu li:hover {
+    color: blue;
+}
+
+.link-menu li:not(:first-child) {
+    margin-left: 30px;
+}
+
+.link-menu li:nth-child(4),
+.link-menu li:last-child {
+    position: relative;
+    margin-left: 50px;
+}
+
+.link-menu li:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 11px;
+    background: url(img/free-icon-black-check-box-with-white-check-61141.png) no-repeat center;
+    background-size: contain;
+    width: 13px;
+    height: 15px;
+}
+
+.link-menu li:last-child::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 11px;
+    background: url(img/free-icon-shopping-basket-button-60756.png) no-repeat center;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+}
+
+.link-menu li:nth-child(4):hover::after,
+.link-menu li:last-child:hover::after {
+    filter: invert(8%) sepia(100%) saturate(5695%) hue-rotate(246deg) brightness(112%) contrast(146%);
 }
 
 header .header-inf {
@@ -109,17 +153,37 @@ header .header-inf {
     align-self: center;
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
+    display: flex;
 }
 
-.inf-menu li:not(:last-child) {
+.inf-menu .tit-inf-menu {
+    position: relative;
+}
+
+.inf-menu .tit-inf-menu:not(:last-child) {
     margin-right: 40px;
 }
 
-.inf-menu li:hover {
+.inf-menu .tit-inf-menu:hover {
     color: blue;
     cursor: pointer;
 }
 
-.inf-menu .inf-submenu {
+.tit-inf-menu .inf-submenu {
     display: none;
+    position: absolute;
+    top: 40px;
+    background-color: #282828;
+    padding: 30px;
+    color: white;
+}
+
+.tit-inf-menu:hover .inf-submenu {
+    display: block;
+}
+
+.tit-inf-menu .inf-submenu-1 {
+    width: 135px;
+    line-height: 45px;
+    font-size: 14px;
 }
