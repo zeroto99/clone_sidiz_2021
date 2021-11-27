@@ -51,7 +51,7 @@ header .header-inf {
 }
 
 .header-link .search-form:hover button {
-    color: blue;
+    color: #002BD2;
     cursor: pointer;
 }
 
@@ -92,7 +92,7 @@ header .header-inf {
 }
 
 .link-menu li:hover {
-    color: blue;
+    color: #002BD2;
 }
 
 .link-menu li:not(:first-child) {
@@ -139,7 +139,8 @@ header .header-inf {
 .header-inf .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 18px 0;    
+    height: 62px;
+    line-height: 62px;
 }
 
 .header-inf .logo {
@@ -154,10 +155,12 @@ header .header-inf {
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
     display: flex;
+    height: 100%;
 }
 
 .inf-menu .tit-inf-menu {
     position: relative;
+    height: 100%;
 }
 
 .inf-menu .tit-inf-menu:not(:last-child) {
@@ -165,17 +168,26 @@ header .header-inf {
 }
 
 .inf-menu .tit-inf-menu:hover {
-    color: blue;
+    color: #002BD2;
     cursor: pointer;
 }
 
 .tit-inf-menu .inf-submenu {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 62px;
     background-color: #282828;
     padding: 30px;
     color: white;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    line-height: 34px;
+    width: 132px;
+}
+
+.inf-submenu li a:hover {
+    color: #4268ff;
 }
 
 .tit-inf-menu:hover .inf-submenu {
@@ -183,7 +195,35 @@ header .header-inf {
 }
 
 .tit-inf-menu .inf-submenu-1 {
-    width: 135px;
-    line-height: 45px;
-    font-size: 14px;
+    left: -47px;
 }
+
+.tit-inf-menu .inf-submenu-1 li:nth-child(3) {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.tit-inf-menu .inf-submenu-2 {
+    width: 640px;
+    left: -400px;
+}
+
+.inf-submenu-2 .item-submenu {
+    display: flex;
+}
+
+.inf-submenu-2 .item-submenu li:first-child {
+    font-weight: 700;
+    width: 130px;
+    padding-right: 30px;
+    border-right: 1px solid;
+}
+
+.inf-submenu-2 .item-submenu li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.tit-inf-menu .inf-submenu-3 {
+    left: -52px;
+}
+
