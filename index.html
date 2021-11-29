@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- xeicon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- xeicon -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>sidiz</title>
 </head>
 <body>
     <header>
         <section class="header-link">
             <h2 class="sr-only">첫번째 머리말입니다.</h2>
-            <div class="header-container">
+            <div class="container">
                 <form action="#none" method="get" class="search-form">
                     <input type="text" id="search">
                     <label for="search" class="sr-only">검색창입니다.</label>
-                    <!-- 페이지 내에서 상품 검색은 submit으로 전송되는게 맞는지 -->
                     <button type="submit">SEARCH</button>
                 </form>
                 <ul class="link-menu">
@@ -47,7 +47,7 @@
         </section>
         <section class="header-inf">
             <h2 class="sr-only">두번째 머리말입니다.</h2>
-            <div class="header-container">
+            <div class="container">
                 <h3 class="logo">SIDIZ</h2>
                 <ul class="inf-menu">
                     <li class="tit-inf-menu">ABOUT SIDIZ
@@ -334,8 +334,60 @@
             </div>
         </section>
     </header>
+    <section class="slide-section">    
+        <h2 class="sr-only">주요 상품이 슬라이드됩니다.</h2>
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="txt-item">
+                                <span class="tit-txt">의자 위 인생은 진행중</span>
+                                <span class="model-txt">SIDIZ</span>
+                                <a href="#javascript:void(0)" class="banner-txt">하이체어편 조립 및 사용법 가이드</a>
+                            </div>
+                            <a href="#javascript:void(0)" class="img-item img-item-1"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="txt-item">
+                                <span class="tit-txt">Fitting your movement</span>
+                                <span class="model-txt">T80</span>
+                                <a href="#javascript:void(0)" class="banner-txt">하이체어편 조립 및 사용법 가이드</a>
+                            </div>
+                            <a href="#javascript:void(0)" class="img-item img-item-2"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="txt-item">
+                                <span class="tit-txt">슬기로운 집콕 생활템.</span>
+                                <span class="model-txt">T40</span>
+                                <a href="#javascript:void(0)" class="banner-txt">하이체어편 조립 및 사용법 가이드</a>
+                            </div>
+                            <a href="#javascript:void(0)" class="img-item img-item-3"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-btns">
+                    <span>PREV</span>
+                </div>
+                <div class="swiper-button-next swiper-btns">
+                    <span>NEXT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="list-section">
+
+    </section>
     <footer>
         <!-- <div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div> -->
+        <!-- <div>아이콘 제작자 <a href="" title="IYAHICON">IYAHICON</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div> -->
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="style.js"></script>
 </body>
 </html>
