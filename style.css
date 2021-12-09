@@ -335,7 +335,99 @@ header .header-inf {
     right: 20px;
 }
 
+.swiper .swiper-button-prev:hover, 
+.swiper .swiper-button-next:hover {
+    color: #4268ff;
+}
+
 /* list-section */
 .list-section {
-    padding-top: 50px;
+    padding-top: 100px;
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.list-section .tit-section {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.list-section .list-frame {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-frame .list-col:first-child {
+    margin-right: 100px;
+}
+
+.list-col .list-item a {
+    display: inline-block;
+}
+
+.list-col .list-item a:hover {
+    opacity: 80%;
+}
+
+.list-item .tit-task-chair {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.list-item .desc-task-chair {
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0 80px 0;
+}
+
+.list-item .img-task-chair1 {
+    background-image: url(img/deconovo-fDqcKdxvNkI-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width: 560px;
+    height: 800px;
+}
+
+.list-item .img-task-chair2 {
+    background-image: url(img/laura-davidson-QBAH4IldaZY-unsplash.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 560px;
+}
+
+.list-item .img-task-chair3 {
+    background-image: url(img/ergonofis-FxoQkT0jpUg-unsplash.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    width: 560px;
+    height: 680px;
+}
+
+.list-item .img-task-chair4 {
+    background-image: url(img/deconovo-fDqcKdxvNkI-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width: 560px;
+    height: 460px;
+}
+
+.list-section .btn-all {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    color: #002BD2;
+    font-size: 13px;
+}
+
+.list-section .btn-all:hover {
+    border-bottom: 1px solid #002BD2;
 }
