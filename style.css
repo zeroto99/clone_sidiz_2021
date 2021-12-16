@@ -22,7 +22,6 @@ body {
 }
 
 /* 헤더 */
-
 .container {
     width: calc(100% - 240px);
     margin: 0 auto;    
@@ -226,9 +225,9 @@ header .header-inf {
     left: -52px;
 }
 
-/* section.slide */
+/* 슬라이드 */
 .slide-section {
-    border-bottom: 1px solid #BCBCBC;
+
 }
 
 .swiper {
@@ -340,12 +339,22 @@ header .header-inf {
     color: #4268ff;
 }
 
-/* list-section */
-.list-section {
-    padding-top: 100px;
+/* 상품 리스트 시작 */
+.container-1220 {
     width: 1220px;
     margin: 0 auto;
     position: relative;
+}
+
+/* list-section */
+.list-section-1 {
+    border-top: 1px solid #BCBCBC;
+    border-bottom: 1px solid #BCBCBC;
+    padding-top: 100px;   
+}
+
+.list-section { 
+    position: relative;;
 }
 
 .list-section .tit-section {
@@ -387,42 +396,33 @@ header .header-inf {
     margin: 20px 0 80px 0;
 }
 
+.list-item a img {
+    object-fit: cover;
+}
+
 .list-item .img-task-chair1 {
-    background-image: url(img/deconovo-fDqcKdxvNkI-unsplash.jpg);
-    background-position: bottom;
-    background-size: cover;
     width: 560px;
     height: 800px;
 }
 
 .list-item .img-task-chair2 {
-    background-image: url(img/laura-davidson-QBAH4IldaZY-unsplash.jpg);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 560px;
     height: 560px;
 }
 
 .list-item .img-task-chair3 {
-    background-image: url(img/ergonofis-FxoQkT0jpUg-unsplash.jpg);
-    background-position: center bottom;
-    background-size: cover;
     width: 560px;
     height: 680px;
 }
 
 .list-item .img-task-chair4 {
-    background-image: url(img/deconovo-fDqcKdxvNkI-unsplash.jpg);
-    background-position: bottom;
-    background-size: cover;
     width: 560px;
     height: 460px;
 }
 
 .list-section .btn-all {
     position: absolute;
-    top: 110px;
+    top: 12px;
     right: 0;
     color: #002BD2;
     font-size: 13px;
@@ -431,3 +431,29 @@ header .header-inf {
 .list-section .btn-all:hover {
     border-bottom: 1px solid #002BD2;
 }
+
+/* 키즈, 인테리어 체어 섹션*/
+.list-section-2 {
+    margin: 100px 0 200px 0;
+}
+
+.list-section-3 {
+    margin-bottom: 100px;
+}
+
+.horizontal-list-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.horizontal-list-frame .list-item {
+    width: 340px;
+    height: 100%;
+}
+
+.horizontal-list-frame .list-item a img {
+    width: 100%;
+    height: 500px;
+}
+
