@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+    font-size: 10px;
+}
 
 body {
     font-family: 'Outfit', sans-serif;
@@ -23,7 +26,7 @@ body {
 
 /* 헤더 */
 .container {
-    width: calc(100% - 240px);
+    width: calc(100% - 24rem);
     margin: 0 auto;    
 }
 
@@ -33,7 +36,7 @@ header {
 
 header .header-link, 
 header .header-inf {
-    border-bottom: 1px solid #BCBCBC;
+    border-bottom: 0.1rem solid #BCBCBC;
 }
 
 .header-link .container {
@@ -42,7 +45,8 @@ header .header-inf {
 }
 
 .header-link .search-form {
-    padding: 0 20px;
+    padding: 0 2rem;
+    line-height: 4.2rem;
 }
 
 .header-link .search-form:hover {
@@ -56,10 +60,9 @@ header .header-inf {
 
 .header-link .search-form, 
 .header-link .link-menu {
-    border-left: 1px solid #BCBCBC;
-    height: 40px;
+    border-left: 0.1rem solid #BCBCBC;
+    height: 4rem;
     /* align-item */
-    line-height: 38px;
 }
 
 .search-form input {
@@ -70,9 +73,9 @@ header .header-inf {
 .search-form button {
     border: none;
     background: none;
-    font-size: 13px;
+    font-size: 1.3rem;
     /* 음수값으로 주면 돼요 */
-    letter-spacing: -1px;
+    letter-spacing: -0.1rem;
 }
 
 .header-link .link-menuu {
@@ -80,9 +83,10 @@ header .header-inf {
 }
 
 .header-link .link-menu {
-    padding-left: 40px;
-    font-size: 13px;
+    padding-left: 4rem;
+    font-size: 1.3rem;
     font-family: 'Noto Sans KR', sans-serif;
+    line-height: 3.8rem;
 }
 
 .link-menu li {
@@ -95,13 +99,13 @@ header .header-inf {
 }
 
 .link-menu li:not(:first-child) {
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 .link-menu li:nth-child(4),
 .link-menu li:last-child {
     position: relative;
-    margin-left: 50px;
+    margin-left: 5rem;
 }
 
 .link-menu li:nth-child(4)::after {
@@ -138,14 +142,14 @@ header .header-inf {
 .header-inf .container {
     display: flex;
     justify-content: space-between;
-    height: 62px;
-    line-height: 62px;
+    height: 6.2rem;
+    line-height: 6.2rem;
 }
 
 .header-inf .logo {
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 }
 
 .header-inf .inf-menu {
@@ -158,10 +162,11 @@ header .header-inf {
 .inf-menu .tit-inf-menu {
     position: relative;
     height: 100%;
+    font-size: 1.6rem;
 }
 
 .inf-menu .tit-inf-menu:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 4rem;
 }
 
 .inf-menu .tit-inf-menu:hover {
@@ -178,9 +183,9 @@ header .header-inf {
     color: white;
     font-weight: 400;
     font-family: 'Noto Sans KR';
-    font-size: 14px;
-    line-height: 34px;
-    width: 132px;
+    font-size: 1.4rem;
+    line-height: 3.4rem;
+    width: 13.2rem;
     z-index: 20;
 }
 
@@ -197,13 +202,13 @@ header .header-inf {
 }
 
 .tit-inf-menu .inf-submenu-1 li:nth-child(3) {
-    margin-top: 20px;
+    margin-top: 2rem;
     font-weight: 700;
 }
 
 .tit-inf-menu .inf-submenu-2 {
-    width: 640px;
-    left: -400px;
+    width: 64rem;
+    left: -40rem;
 }
 
 .inf-submenu-2 .item-submenu {
@@ -212,17 +217,17 @@ header .header-inf {
 
 .inf-submenu-2 .item-submenu li:first-child {
     font-weight: 700;
-    width: 130px;
-    padding-right: 30px;
-    border-right: 1px solid;
+    width: 13rem;
+    padding-right: 3rem;
+    border-right: 0.1rem solid black;
 }
 
 .inf-submenu-2 .item-submenu li:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .tit-inf-menu .inf-submenu-3 {
-    left: -52px;
+    left: -5.2rem;
 }
 
 /* 슬라이드 */
@@ -237,28 +242,31 @@ header .header-inf {
 .swiper-slide .slide-item {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0 100px 0;
+    padding: 5rem 0 10rem 0;
 }
 
 .txt-item .tit-txt {
     display: block;
-    font-size: 60px;
-    width: 390px;
-    line-height: 80px;
-    margin-top: 80px;
+    font-size: 6rem;
+    width: 39rem;
+    line-height: 8rem;
+    margin-top: 8rem;
 }
 
 .txt-item .model-txt {
     display: block;
-    font-size: 80px;
+    font-size: 8rem;
     font-weight: 700;
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .txt-item .banner-txt {
     display: block;
     position: relative;
-    margin: 80px 0 0 110px;
+    margin: 8rem 0 0 11rem;
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: bold;
 }
 
 .txt-item .banner-txt::before {
@@ -283,8 +291,12 @@ header .header-inf {
     background-size: contain;
 }
 
+.txt-item .banner-txt:hover {
+    color: #000;
+}
+
 .slide-item .img-item {
-    height: 900px;
+    height: 90rem;
     width: 65%;
     background-repeat: no-repeat;
 }
@@ -310,12 +322,12 @@ header .header-inf {
 .swiper .swiper-btns {
     top: 70%;
     color: black;
-    --swiper-navigation-size: 18px;
+    --swiper-navigation-size: 1.8rem;
 }
 
 .swiper-btns span {
     position: absolute;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .swiper .swiper-button-prev {
@@ -323,15 +335,15 @@ header .header-inf {
 }
 
 .swiper-button-prev span {
-    left: 20px;
+    left: 2rem;
 }
 
 .swiper .swiper-button-next {
-    left: 155px;
+    left: 15.5rem;
 }
 
 .swiper-button-next span {
-    right: 20px;
+    right: 2rem;
 }
 
 .swiper .swiper-button-prev:hover, 
@@ -341,7 +353,7 @@ header .header-inf {
 
 /* 상품 리스트 시작 */
 .container-1220 {
-    width: 1220px;
+    width: calc(100% - 25%);
     margin: 0 auto;
     position: relative;
 }
@@ -350,7 +362,7 @@ header .header-inf {
 .list-section-1 {
     border-top: 1px solid #BCBCBC;
     border-bottom: 1px solid #BCBCBC;
-    padding-top: 100px;   
+    padding-top: 10rem;   
 }
 
 .list-section { 
@@ -358,21 +370,28 @@ header .header-inf {
 }
 
 .list-section .tit-section {
-    font-size: 34px;
-    margin-bottom: 40px;
+    font-size: 3.4rem;
+    margin-bottom: 4rem;
 }
 
 .list-section .list-frame {
     display: flex;
     flex-direction: row;
+    gap: 10rem;
+    width: 100%;
 }
 
-.list-frame .list-col:first-child {
-    margin-right: 100px;
+.list-frame .list-col {
+    width: 50%;
+}
+
+.list-col .list-item {
+    width: 100%;
 }
 
 .list-col .list-item a {
     display: inline-block;
+    width: 100%;
 }
 
 .list-col .list-item a:hover {
@@ -381,19 +400,15 @@ header .header-inf {
 
 .list-item .tit-task-chair {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
-    display: inline-block;
-    width: 100%;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .list-item .desc-task-chair {
-    font-size: 24px;
+    font-size: 2.4rem;
     text-align: center;
-    display: inline-block;
-    width: 100%;
-    margin: 20px 0 80px 0;
+    margin: 2rem 0 8rem 0;
 }
 
 .list-item a img {
@@ -401,23 +416,23 @@ header .header-inf {
 }
 
 .list-item .img-task-chair1 {
-    width: 560px;
-    height: 800px;
+    width: 100%;
+    height: 80rem;
 }
 
 .list-item .img-task-chair2 {
-    width: 560px;
-    height: 560px;
+    width: 100%;
+    height: 56rem;
 }
 
 .list-item .img-task-chair3 {
-    width: 560px;
-    height: 680px;
+    width: 100%;
+    height: 68rem;
 }
 
 .list-item .img-task-chair4 {
-    width: 560px;
-    height: 460px;
+    width: 100%;
+    height: 46rem;
 }
 
 .list-section .btn-all {
@@ -425,35 +440,344 @@ header .header-inf {
     top: 12px;
     right: 0;
     color: #002BD2;
-    font-size: 13px;
+    font-size: 1.3rem;
 }
 
 .list-section .btn-all:hover {
-    border-bottom: 1px solid #002BD2;
+    border-bottom: 0.1rem solid #002BD2;
 }
 
 /* 키즈, 인테리어 체어 섹션*/
 .list-section-2 {
-    margin: 100px 0 200px 0;
+    margin: 10rem 0 20rem 0;
 }
 
 .list-section-3 {
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 }
 
 .horizontal-list-frame {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 10rem;
+    width: 100%;
 }
 
 .horizontal-list-frame .list-item {
-    width: 340px;
+    width: 100%;
     height: 100%;
 }
 
 .horizontal-list-frame .list-item a img {
     width: 100%;
-    height: 500px;
+    height: 50rem;
 }
 
+
+/* 클래스명 임시 지정 */
+/* 공지, sns 기타 안내 섹션 */
+.etc-section {
+    background: #F5F5F5;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.etc-section .news-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #DDE6FF;
+}
+
+.news-item .news {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: #002BD2;
+    padding: 2rem 5rem;
+    color: white;
+}
+
+.news-item .news-link {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.news-item .news-link:hover {
+    border-bottom: 1px solid;
+}
+
+.news-link .news-date {
+    padding-left: 2rem;
+    font-weight: normal;
+}
+
+.news-item .all-link {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    text-decoration: underline;
+}
+
+.news-item .all-link:hover {
+    color: #002BD2
+}
+
+.insta-item {
+    margin: 7rem 0;
+}
+
+
+.insta-item .insta-img {
+    display: flex;
+    gap: 3rem;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+.insta-item .insta-tit {
+    font-size: 2rem;
+    padding-left: 6rem;
+    line-height: 5rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.insta-item .insta-tit::before {
+    content: 'INSTA';
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    left: 0;
+}
+
+.insta-img a {
+    width: 26rem;
+    height: 26rem;
+}
+
+.insta-img a img {
+    width: 26rem;
+    object-fit: cover;
+    height: 26rem;
+}
+
+.etc-section .blog-item {
+    display: flex;
+    gap: 12rem;
+}
+
+.blog-item .blog-content {
+    
+}
+
+.blog-content .blog-tit {
+    position: relative;
+    padding-left: 6rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.blog-content .blog-tit::before {
+    content: 'BLOG';
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    left: 0;
+}
+
+.blog-content .blog-sub-tit {
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.blog-content .blog-des {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 3rem 0;
+    line-height: 2rem;
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 두 줄 */
+    -webkit-box-orient: vertical;
+}
+
+.blog-content .blog-more {
+    color: #002BD2;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.blog-item .blog-img-btn {
+}
+
+.blog-item .blog-img-btn img {
+    width: 100%;
+}
+
+/* footer  */
+footer {
+    font-size: 1.4rem;
+    background-color: #141414;
+    color: white;
+    padding: 10rem 0;
+}
+
+footer .footer-hd {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.footer-hd .footer-logo {
+    font-size: 4rem;
+}
+
+.footer-hd .sns {
+    display: flex;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content .company-inf {
+    line-height: 3rem;
+}
+
+.footer-content .link {
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+    line-height: 3rem;
+}
+
+.link .link-tit {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.link .link-tit ul {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.call {
+    font-size: 2.6rem;
+}
+
+.txt-deco {
+    text-decoration: underline;
+    color: #5b5bed;
+}
+
+.move-btn {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    z-index: 10;
+}
+
+.move-btn a {
+    width: 10rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 5rem;
+    display: block;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 15%);
+}
+
+@media screen and (max-width: 1640px) {
+    footer .footer-content {
+        display: block;
+    }
+
+    .footer-content .link {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .list-section .list-frame,
+    .horizontal-list-frame {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-frame .list-col {
+        width: 100%;
+    }
+    
+    .etc-section .blog-item {
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .link .link-product {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-link, 
+    .header-inf .inf-menu {
+        display: none;
+    }
+
+    .etc-section .news-item {
+        flex-direction: column;
+        align-items: normal;
+        text-align: center;
+        justify-content: normal;
+        gap: 2rem;
+    }
+
+    .news-item .all-link {
+        margin: 0 0 2rem 0;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    html {
+        font-size: 5px;
+    }
+
+    .container {
+        width: calc(100% - 10rem);
+    }
+
+    .news-link .news-date {
+        display: none;
+    }
+
+    .footer-content .link {
+        display: none;
+    }
+}
